@@ -1,4 +1,5 @@
+# Known private folder
 private
 
-~*
+# Put the project into my OneDrive
 rsync-to-onedrive.ps1
