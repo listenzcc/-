@@ -12,7 +12,9 @@ Introduction of Convolve operation.
 >
 > $${f \ast g}$$
 >
-> The term convolution refers to both the result function and to the process of computing it. It is defined as the integral of the product of the two functions after one is reflected about the y-axis and shifted. The integral is evaluated for all values of shift, producing the convolution function. The choice of which function is reflected and shifted before the integral does not change the integral result (see commutativity). Graphically, it expresses how the 'shape' of one function is modified by the other. [wikipedia](https://en.wikipedia.org/wiki/Asterisk).
+> The term convolution refers to both the result function and to the process of computing it. It is defined as the integral of the product of the two functions after one is reflected about the y-axis and shifted. The integral is evaluated for all values of shift, producing the convolution function. The choice of which function is reflected and shifted before the integral does not change the integral result (see commutativity). Graphically, it expresses how the 'shape' of one function is modified by the other. [^wikiConvolution]
+
+[^wikiConvolution]: <https://en.wikipedia.org/wiki/Convolution>
 
 ![example1](./asset/Convolution_of_box_signal_with_itself2.gif "example1")
 ![example2](./asset/Convolution_of_spiky_function_with_box2.gif "example2")
@@ -33,11 +35,12 @@ $$\begin{cases}
 
 In discrete convolution
 
-$$(f \ast g)[n]=\sum_{m=-\infty}^{\infty} f[m] g[n-m]$$
+$$(f \ast g) [n]=\sum_{m=-\infty}^{\infty} f[m] g[n-m]$$
+
+Latex equation of convolution is written as following [^latexEquationOfConvolutionSymbolic]
 
 ```latex
-% Latex equation written by
-% https://www.math-linux.com/latex/faq/latex-faq/article/latex-convolution-symbol
+% Latex example of convolution symbolic representation
 
 % With circle
 $$(f \circledast g)(t):=\int_{-\infty}^{\infty} f(\tau) g(t-\tau) d \tau$$
@@ -46,7 +49,11 @@ $$(f \circledast g)(t):=\int_{-\infty}^{\infty} f(\tau) g(t-\tau) d \tau$$
 $$(f \ast g)(t):=\int_{-\infty}^{\infty} f(\tau) g(t-\tau) d \tau$$
 ```
 
+[^latexEquationOfConvolutionSymbolic]: https://www.math-linux.com/latex/faq/latex-faq/article/latex-convolution-symbol
+
 ## Appendix
 
 > The symbol U+2217 ∗ ASTERISK OPERATOR is different than U+002A * ASTERISK, which is often used to denote complex conjugation. See Asterisk § Mathematical typography.
-> The asterisk (/ˈæstərɪsk/ *), from Late Latin asteriscus, from Ancient Greek ἀστερίσκος, asteriskos, "little star", is a typographical symbol. It is so called because it resembles a conventional image of a heraldic star. [wikipedia](https://en.wikipedia.org/wiki/Asterisk).
+> The asterisk (/ˈæstərɪsk/ *), from Late Latin asteriscus, from Ancient Greek ἀστερίσκος, asteriskos, "little star", is a typographical symbol. It is so called because it resembles a conventional image of a heraldic star. [^wikiAsterisk]
+
+[^wikiAsterisk]: <https://en.wikipedia.org/wiki/Asterisk>
